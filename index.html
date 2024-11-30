@@ -8,64 +8,84 @@
 </head>
 <body>
   <div class="dashboard">
-    <header class="dashboard-header">
-      <h1>Welcome to My Dashboard</h1>
-    </header>
-    <div class="dashboard-body">
-      <!-- Projects Section -->
-      <section class="projects">
-        <h2>My Projects</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>Project Name</th>
-              <th>Status</th>
-              <th>Last Updated</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>Personal Portfolio</td>
-              <td>In Progress</td>
-              <td>2024-11-30</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>E-commerce Website</td>
-              <td>Completed</td>
-              <td>2024-10-20</td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>Blog Platform</td>
-              <td>In Progress</td>
-              <td>2024-11-25</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+    <!-- Sidebar Section -->
+    <aside class="sidebar">
+      <h2>Admin Dashboard</h2>
+      <nav>
+        <ul>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Users</a></li>
+          <li><a href="#">Analytics</a></li>
+          <li><a href="#">Settings</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <header class="dashboard-header">
+        <h1>Welcome to My Dashboard</h1>
+      </header>
       
-      <!-- Sidebar Section -->
-      <aside class="sidebar">
-        <div class="announcements">
-          <h3>Announcements</h3>
-          <ul>
-            <li>New feature update coming next week!</li>
-            <li>Team meeting on 2024-12-02 at 3 PM.</li>
-            <li>Submit project reports by 2024-12-05.</li>
-          </ul>
+      <div class="dashboard-body">
+        <!-- Projects Section -->
+        <section class="projects">
+          <h2>My Projects</h2>
+          <div class="card">
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Project Name</th>
+                  <th>Status</th>
+                  <th>Last Updated</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Personal Portfolio</td>
+                  <td>In Progress</td>
+                  <td>2024-11-30</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>E-commerce Website</td>
+                  <td>Completed</td>
+                  <td>2024-10-20</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Blog Platform</td>
+                  <td>In Progress</td>
+                  <td>2024-11-25</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Right Side (Announcements and Trending) -->
+        <div class="right-side">
+          <div class="announcements">
+            <h3>Announcements</h3>
+            <ul>
+              <li>New feature update coming next week!</li>
+              <li>Team meeting on 2024-12-02 at 3 PM.</li>
+              <li>Submit project reports by 2024-12-05.</li>
+            </ul>
+          </div>
+          <div class="trending">
+            <h3>Trending</h3>
+            <ul>
+              <li>AI and Machine Learning in 2024</li>
+              <li>Top 10 Web Development Trends</li>
+              <li>Best Tools for Project Management</li>
+            </ul>
+          </div>
         </div>
-        <div class="trending">
-          <h3>Trending</h3>
-          <ul>
-            <li>AI and Machine Learning in 2024</li>
-            <li>Top 10 Web Development Trends</li>
-            <li>Best Tools for Project Management</li>
-          </ul>
-        </div>
-      </aside>
+      </div>
     </div>
   </div>
 </body>
